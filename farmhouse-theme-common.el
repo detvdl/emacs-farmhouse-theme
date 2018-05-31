@@ -42,7 +42,7 @@
     (yellow2 "#eea806")
     (yellow3 "#fcce16")
     (green1 "#4a8b0d")
-    (green2 "#8cc610")
+    (green2 "#41AD1D")
     (green3 "#b0e60e")
     (cyan1 "#2c9f6b")
     (cyan2 "#1ee079")
