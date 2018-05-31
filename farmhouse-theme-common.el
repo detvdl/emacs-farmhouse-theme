@@ -148,9 +148,9 @@
       `(powerline-active2 ((,class (:background ,base5 :foreground ,base2))))
 
       `(mode-line-inactive ((,class (:inherit mode-line
-                                              :foreground ,base2
-                                              :background ,base5
-                                              :box nil))))
+                                     :foreground ,base2
+                                     :background ,base5
+                                     :box nil))))
       `(powerline-inactive1 ((,class (:background ,base4 :foreground ,base2))))
       `(powerline-inactive2 ((,class (:background ,base4 :foreground ,base2))))
 
@@ -211,12 +211,19 @@
       `(helm-source-header ((,class (:weight bold :height 1.3 :family "Sans Serif"))))
 
       ;; magit
-      `(magit-branch ((,class (:weight bold :height 1.2 :foreground ,purple2))))
-      `(magit-diff-add ((,class ,diff-added)))
-      `(magit-diff-del ((,class ,diff-removed)))
-      `(magit-diff-hunk-header ((,class ,diff-hunk-header)))
-      `(magit-diff-file-header ((,class ,diff-file-header)))
+      `(magit-branch-local ((,class (:weight bold :height 1.2 :foreground ,blue1))))
+      `(magit-branch-remote ((,class (:weight bold :height 1.2 :foreground ,green1))))
+      `(magit-diff-added ((,class ,diff-added)))
+      `(magit-diff-added-highlight ((,class ,diff-added)))
+      `(magit-diff-removed ((,class ,diff-removed)))
+      `(magit-diff-removed-highlight ((,class ,diff-removed)))
+      `(magit-section-heading ((,class (:foreground ,farm-yellow3))))
+      `(magit-diff-hunk-heading ((,class ,diff-hunk-header)))
+      `(magit-diff-file-heading ((,class ,diff-file-header)))
       `(magit-item-highlight ((,class (:background ,base7))))
+      `(magit-section-highlight ((,class (:background ,base7))))
+      `(magit-diff-context-highlight ((,class (:background ,base5 :foreground ,black))))
+      `(magit-diff-base-highlight ((,class (:background ,base5 :foreground ,black))))
       `(magit-log-sha1 ((,class (:foreground ,cyan1))))
       `(magit-log-head-label ((,class (:foreground ,green1))))
       `(magit-log-head-label-head ((,class (:foreground ,purple1 :weight bold))))
