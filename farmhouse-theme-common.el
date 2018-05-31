@@ -52,7 +52,8 @@
     (blue3 "#23cbfe")
     (purple1 "#941458")
     (purple2 "#ec3691")
-    (purple3 "#fa5fa8")))
+    (purple3 "#fa5fa8")
+    (darkpurple "purple")))
 
 (defun farmhouse-color (symbol)
   "Extracs a color from farmhouse-color-defs by SYMBOL."
@@ -234,8 +235,9 @@
 
       ;; org-mode
       `(org-block ((,class (:background ,base5))))
-      `(org-block-begin-line ((,class (:background ,base5 :foreground ,base3))))
-      `(org-block-end-line ((,class (:background ,base5 :foreground ,base3))))
+      `(org-block-begin-line ((,class (:background ,base5 :foreground ,base3 :underline ,base3))))
+      `(org-block-end-line ((,class (:background ,base5 :foreground ,base3 :overline ,base3))))
+      `(org-code ((,class (:foreground ,farm-darkpurple :weight bold))))
       `(org-date ((,class (:forefound ,cyan1))))
       `(org-footnote ((,class (:foreground ,cyan2 :slant italic :underline t))))
       `(org-hide ((,class (:foreground ,base5))))
@@ -262,6 +264,18 @@
       `(outline-6 ((,class ,ol6)))
       `(outline-7 ((,class ,ol7)))
       `(outline-8 ((,class ,ol8)))
+
+      ;; Web-mode
+      `(web-mode-current-element-highlight-face ((,class (:background ,base6))))
+      `(web-mode-doctype-face ((,class (:foreground ,base2))))
+      `(web-mode-html-attr-name-face ((,class (:foreground ,green1))))
+      `(web-mode-html-attr-value-face ((,class (:foreground ,cyan1))))
+
+      ;; iedit
+      `(iedit-occurence ((,class (:background ,farm-darkpurple :foreground ,white))))
+
+      ;; Anzu
+      `(anzu-replace-to ((,class (:foreground ,farm-darkpurple))))
 
       ;; paren
       `(show-paren-match ((,class ,paren-matched)))
